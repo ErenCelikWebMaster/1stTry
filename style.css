@@ -1,26 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Playfair+Display:wght@600;700&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Lora', Georgia, serif;
   background-color: #f4f7fb;
   color: #222;
   margin: 0;
   padding: 0;
+  line-height: 1.7;
 }
 
 header {
   background-color: #003366;
   color: white;
-  padding: 30px;
+  padding: 45px 25px;
   text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 46px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+  opacity: 0.95;
 }
 
 section {
   background: white;
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 800px;
-  border-radius: 10px;
+  margin: 25px auto;
+  padding: 25px;
+  max-width: 850px;
+  border-radius: 12px;
 }
 
 h2 {
+  font-family: 'Playfair Display', Georgia, serif;
   color: #003366;
+  font-size: 28px;
+}
+
+p, li {
+  font-size: 17px;
 }
