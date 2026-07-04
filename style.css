@@ -1,20 +1,73 @@
-.side-button {
-  position: fixed;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #003366;
-  color: white;
-  padding: 14px 18px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Playfair+Display:wght@600;700&display=swap');
+
+body {
   font-family: 'Lora', Georgia, serif;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  background-color: #f4f7fb;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
 }
 
-.side-button:hover {
-  background-color: #00509e;
+header {
+  background-color: #003366;
+  color: white;
+  padding: 45px 25px;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 46px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+  opacity: 0.95;
+}
+
+.board-button {
+  position: absolute;
+  top: 22px;
+  right: 28px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.3s ease;
+}
+
+.board-button:hover {
+  background-color: white;
+  color: #003366;
+  transform: translateY(-2px);
+}
+
+section {
+  background: white;
+  margin: 25px auto;
+  padding: 25px;
+  max-width: 850px;
+  border-radius: 12px;
+}
+
+h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #003366;
+  font-size: 28px;
+}
+
+p, li {
+  font-size: 17px;
 }
 
 .board-grid {
