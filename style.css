@@ -1,49 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Playfair+Display:wght@600;700&display=swap');
-
-body {
-  font-family: 'Lora', Georgia, serif;
-  background-color: #f4f7fb;
-  color: #222;
-  margin: 0;
-  padding: 0;
-  line-height: 1.7;
-}
-
-header {
+.side-button {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: #003366;
   color: white;
-  padding: 45px 25px;
+  padding: 14px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Lora', Georgia, serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.side-button:hover {
+  background-color: #00509e;
+}
+
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.board-card {
   text-align: center;
-}
-
-header h1 {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 46px;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-}
-
-header p {
-  font-size: 18px;
-  font-style: italic;
-  margin-top: 0;
-  opacity: 0.95;
-}
-
-section {
-  background: white;
-  margin: 25px auto;
-  padding: 25px;
-  max-width: 850px;
+  background-color: #f4f7fb;
+  padding: 20px;
   border-radius: 12px;
 }
 
-h2 {
-  font-family: 'Playfair Display', Georgia, serif;
+.photo-placeholder {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 15px auto;
+  border-radius: 50%;
+  background-color: #d9e3f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #003366;
-  font-size: 28px;
-}
-
-p, li {
-  font-size: 17px;
+  font-weight: bold;
 }
