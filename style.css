@@ -12,9 +12,22 @@ body {
 header {
   background-color: #003366;
   color: white;
-  padding: 45px 25px;
+  padding: 55px 25px 50px 25px;
   text-align: center;
   position: relative;
+}
+
+.hero-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.title-text {
+  text-align: center;
 }
 
 header h1 {
@@ -29,6 +42,23 @@ header p {
   font-style: italic;
   margin-top: 0;
   opacity: 0.95;
+}
+
+.home-logo {
+  width: 95px;
+  height: 95px;
+  object-fit: contain;
+}
+
+.njhs-logo {
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
+}
+
+.doral-logo {
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
 }
 
 .board-button {
@@ -95,4 +125,30 @@ p, li {
   justify-content: center;
   color: #003366;
   font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .hero-title-row {
+    gap: 14px;
+  }
+
+  .home-logo {
+    width: 65px;
+    height: 65px;
+  }
+
+  header h1 {
+    font-size: 34px;
+  }
+
+  header p {
+    font-size: 15px;
+  }
+
+  .board-button {
+    top: 15px;
+    right: 15px;
+    font-size: 13px;
+    padding: 8px 13px;
+  }
 }
