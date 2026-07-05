@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Playfair+Display:wght@600;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Lora', Georgia, serif;
   background-color: #f4f7fb;
@@ -12,9 +16,38 @@ body {
 header {
   background-color: #003366;
   color: white;
-  padding: 55px 25px 50px 25px;
+  padding: 95px 25px 50px 25px;
   text-align: center;
   position: relative;
+}
+
+.top-nav {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 850px;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 13px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  transition: all 0.3s ease;
+}
+
+.top-nav a:hover {
+  background-color: white;
+  color: #003366;
+  transform: translateY(-2px);
 }
 
 .hero-title-row {
@@ -59,27 +92,6 @@ header p {
 
 .doral-logo {
   filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
-}
-
-.board-button {
-  position: absolute;
-  top: 22px;
-  right: 28px;
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 10px 16px;
-  border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  transition: all 0.3s ease;
-}
-
-.board-button:hover {
-  background-color: white;
-  color: #003366;
-  transform: translateY(-2px);
 }
 
 section {
@@ -127,6 +139,18 @@ p, li {
   font-weight: bold;
 }
 
+@media (max-width: 900px) {
+  header {
+    padding-top: 135px;
+  }
+
+  .top-nav {
+    left: 15px;
+    right: 15px;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 700px) {
   .hero-title-row {
     gap: 14px;
@@ -145,10 +169,8 @@ p, li {
     font-size: 15px;
   }
 
-  .board-button {
-    top: 15px;
-    right: 15px;
-    font-size: 13px;
-    padding: 8px 13px;
+  .top-nav a {
+    font-size: 12px;
+    padding: 7px 10px;
   }
 }
